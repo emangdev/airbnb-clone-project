@@ -1,21 +1,21 @@
 # Project Overview 
-    - Project goals
-    - project tech stack
+- Project goals
+- project tech stack
 
 ## Team roles
-    Business analyst (BA)
+Business analyst (BA)
     - Understands customer’s business processes
     - Translates customer business needs into requirements
     
-    Product owner (PO)
+Product owner (PO)
     - Holds responsibility for a product vision and evolution
     - Makes sure the final product meets customer requirements
     
-    Project manager (PM)
+Project manager (PM)
     - Makes sure a product or its part is delivered on time and within budget
     - Manages and motivates the software development team
 
-    UI/UX designer
+UI/UX designer
     - Transforms a product vision into user-friendly designs
     - Creates user journeys for the best user experience and highest conversion rates
 
