@@ -2,7 +2,7 @@
 - Project goals
 - project tech stack
 
-## Team roles
+## Team Roles
 Business analyst (BA)
     - Understands customer’s business processes
     - Translates customer business needs into requirements
