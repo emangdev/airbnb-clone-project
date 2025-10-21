@@ -1,77 +1,53 @@
-# Project Overview 
-- Project goals
-- project tech stack
+# Airbnb Clone Backend
+
+## Project Overview
+- **Goals**: Build a scalable, secure backend for a vacation rental platform with user management, property listings, bookings, and payments.
+- **Tech Stack**: Python, Django, TypeScript, PostgreSQL.
 
 ## Team Roles
+- **Business Analyst (BA)**: Analyzes client needs, translates them into technical requirements.
+- **Product Owner (PO)**: Defines product vision, ensures alignment with client needs.
+- **Project Manager (PM)**: Oversees timely delivery, manages budget and team.
+- **UI/UX Designer**: Designs intuitive interfaces, optimizes user experience.
+- **Software Architect**: Creates scalable architecture, selects tools, enforces code quality.
+- **Software Developer**: Builds and stabilizes backend, resolves technical issues.
+- **QA Engineer**: Verifies functionality, identifies defects.
+- **Test Automation Engineer**: Develops automated testing scripts, maintains test ecosystem.
+- **DevOps Engineer**: Implements CI/CD pipelines, streamlines development-operations.
 
-(Based on the roles outlined in the project overview (e.g., Backend Developer, Database Administrator, etc.) and from the ITRexGroup blog, provide a brief description of each role and their responsibility in the project.)
-Business analyst (BA)
-    - Understands customer’s business processes
-    - Translates customer business needs into requirements
-    
-Product owner (PO)
-    - Holds responsibility for a product vision and evolution
-    - Makes sure the final product meets customer requirements
-    
-Project manager (PM)
-    - Makes sure a product or its part is delivered on time and within budget
-    - Manages and motivates the software development team
-
-UI/UX designer
-    - Transforms a product vision into user-friendly designs
-    - Creates user journeys for the best user experience and highest conversion rates
-
-    Software architect
-    - Designs a high-level software architecture
-    - Selects appropriate tools and platforms to implement the product vision
-    - Sets up code quality standards and performs code reviews
-
-    Software developer
-    - Engineers and stabilizes the producT
-    - Solves any technical problems emerging during the development lifecycle
-
-    Quality assurance (QA) engineer
-    - Makes sure an application performs according to requirements
-    - Spots functional and non-functional defects
-
-    Test automation engineer
-    - Designs a test automation ecosystem
-    - Writes and maintains test scripts for automated testing
-
-    DevOps engineer
-    - Facilitates cooperation between development and operations teams
-    - Builds continuous integration and continuous delivery (CI/CD) pipelines for faster delivery
-
-## Technology Stack 
-
-[List the technologies mentioned in the project overview (e.g., Django, PostgreSQL, GraphQL, etc.).
-For each technology, explain its purpose in the project (e.g., “Django: a web framework for building RESTful APIs”).]
- - Django
- - Python
- - Typescript
- - SQL
+## Technology Stack
+- **Django**: Web framework for building RESTful APIs and handling backend logic.
+- **Python**: Core programming language for backend development.
+- **TypeScript**: Enhances frontend-backend integration with type-safe APIs.
+- **PostgreSQL**: Relational database for storing user, property, and booking data.
 
 ## Database Design
-
-(List the key entities required for the project, such as Users, Properties, Bookings, Reviews, and Payments.
-For each entity, list 3-5 important fields and describe how these entities are related (e.g., a user can have multiple properties, a booking belongs to a property, etc.).)
+- **Entities and Fields**:
+  - **Users**: `id`, `email`, `password_hash`, `name`, `role`.
+  - **Properties**: `id`, `owner_id`, `title`, `location`, `price_per_night`.
+  - **Bookings**: `id`, `property_id`, `user_id`, `check_in`, `check_out`.
+  - **Reviews**: `id`, `property_id`, `user_id`, `rating`, `comment`.
+  - **Payments**: `id`, `booking_id`, `amount`, `status`, `payment_date`.
+- **Relationships**:
+  - One `User` can own multiple `Properties` (one-to-many).
+  - One `Property` can have multiple `Bookings` and `Reviews` (one-to-many).
+  - One `Booking` links to one `Property` and one `User` (many-to-one).
+  - One `Payment` links to one `Booking` (one-to-one).
 
 ## Feature Breakdown
-
-(List the main features (e.g., user management, property management, booking system, etc.) as outlined in the project overview.
-Provide a 2-3 sentence description of each feature, explaining how it contributes to the project.
+- **User Management**: Register, login, manage profiles. Enables secure access and personalization.
+- **Property Management**: Create, update, delete listings. Core to platform’s rental functionality.
+- **Booking System**: Book properties, check availability. Drives core user interaction.
+- **Review System**: Submit, view ratings and comments. Builds trust and transparency.
+- **Payment Processing**: Securely handle transactions. Ensures reliable financial operations.
 
 ## API Security
-
-(Explain the key security measures that will be implemented (e.g., authentication, authorization, rate limiting).
-Provide a brief explanation of why security is crucial for each key area of the project (e.g., protecting user data, securing payments, etc.).
+- **Authentication**: JWT for user verification, protecting endpoints.
+- **Authorization**: Role-based access to restrict actions (e.g., only owners manage listings).
+- **Rate Limiting**: Prevent abuse, ensure API stability.
+- **Importance**: Secures user data, protects payments, maintains platform trust.
 
 ## CI/CD Pipeline
-
-(Briefly explain what CI/CD pipelines are and why they are important for the project.
-Mention the tools that could be used for this (e.g., GitHub Actions, Docker, etc.)
-
-
-
-
-
+- **Definition**: Automated processes for code integration (CI) and deployment (CD).
+- **Importance**: Ensures fast, reliable delivery with minimal errors.
+- **Tools**: GitHub Actions for automation, Docker for containerized deployments.
