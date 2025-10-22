@@ -1,7 +1,7 @@
 # Airbnb Clone Backend
 
 ## Project Overview
-- **Goals**:
+### **Goals**:
 1. Learn building scalable server-side applications by building an airbnb clone.
 2. Understand how to secure backend systems and server side applications.
 3. Impliment a secure system for user registration, authentication and profile management.
