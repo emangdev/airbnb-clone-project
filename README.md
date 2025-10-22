@@ -2,13 +2,13 @@
 
 ## Project Overview
 - **Goals**:
-  1. Learn building scalable server-side applications by building an airbnb clone.
-  2. Understand how to secure backend systems and server side applications.
-  3. Impliment a secure system for user registration, authentication and profile management.
-  4. Impliment features for property management - listings, updates and retrieval.
-  5. Intergrate payment system to handle transactions and record payment details.
-  6. Impliment the booking mechanism for users to reserve properties and manage booking details.
-  7. Impliment allows users to leave reviews and property ratings.
+1. Learn building scalable server-side applications by building an airbnb clone.
+2. Understand how to secure backend systems and server side applications.
+3. Impliment a secure system for user registration, authentication and profile management.
+4. Impliment features for property management - listings, updates and retrieval.
+5. Intergrate payment system to handle transactions and record payment details.
+6. Impliment the booking mechanism for users to reserve properties and manage booking details.
+7. Impliment allows users to leave reviews and property ratings.
      
 ## Team Roles
 - **Business Analyst (BA)**: Works on analyzing client needs and  translates them into technical requirements.
